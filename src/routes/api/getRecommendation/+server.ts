@@ -87,7 +87,7 @@ async function OpenAIStream(payload: OpenAIStreamPayload) {
 
 	let counter = 0;
 
-	const res = await fetch('https://api.openai.com/v1/completions', {
+	const res = await fetch('https://gigachat.devices.sberbank.ru/api/v1/chat/completions', {
 		headers: {
 			'Content-Type': 'application/json',
 			Authorization: `Bearer ${key}`
